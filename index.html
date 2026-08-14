@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    
+    <!-- تهيئة روابط المشاركة (Open Graph) -->
+    <meta property="og:title" content="B2B WINNERS | دليلك نحو التجارة الإلكترونية المربحة">
+    <meta property="og:description" content="هل تعبت من تضييع ايام و اموال في البحث عن منتج مربح ؟ نظام عمل متكامل يضع بين يديك المنتجات الرابحة جاهزة للبيع.">
+    <meta property="og:image" content="assets/IMG-20260809-WA0034.jpg"> 
+    <meta property="og:url" content="https://iipabdou90-ops.github.io/B2bwins/">
+    <meta property="og:type" content="website">
+
+    <title>B2B WINNERS | دليلك نحو التجارة الإلكترونية المربحة</title>
+    
+    <!-- أيقونة المتصفح (Favicon) -->
+    <link rel="icon" type="image/jpeg" href="assets/IMG-20260809-WA0034.jpg">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    
+    <!-- Meta Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '2113979972712040');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=2113979972712040&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@500;700;900&display=swap');
+
+        :root {
+            --dark-blue: #0A2540;
+            --light-blue: #0077FF;
+            --gold: #FFC107;
+            --gold-dark: #FF9800;
+            --red: #FF3B30;
+            --green: #34C759;
+            --bg-gray: #F2F4F8;
+            --white: #FFFFFF;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Cairo', sans-serif;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        body {
+            background-color: var(--dark-blue); 
+            color: #333;
+            padding-bottom: 80px; 
+            
+            /* منع تحديد ونسخ النصوص للحماية */
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        .funnel-container {
+            max-width: 500px;
+            margin: 0 auto;
+            background-color: var(--white);
+            box-shadow: 0 0 30px rgba(0,0,0,0.5);
+            overflow: hidden;
+            position: relative;
+        }
+
+        .title-main { font-size: 2.2rem; font-weight: 900; line-height: 1.2; text-align: center; margin-bottom: 15px; }
+        .highlight-red { color: var(--red); }
+        .highlight-blue { color: var(--light-blue); }
+        .highlight-gold { color: var(--gold); }
+        .text-center { text-align: center; }
+
+        /* --- اللوجو النصي --- */
+        .text-logo {
+            font-size: 3.5rem;
+            font-weight: 900;
+            margin-bottom: 25px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            text-shadow: 0 4px 10px rgba(0,0,0,0.08);
+            direction: ltr;
+        }
+        .text-logo .b2b { color: var(--dark-blue); }
+        .text-logo .winners { color: var(--gold); }
+
+        /* 1. قسم الهيرو */
+        .section-hero {
+            background: linear-gradient(180deg, var(--bg-gray) 0%, var(--white) 100%);
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .hero-subtitle { font-size: 1.2rem; font-weight: 700; color: #555; background: #E3E8EE; padding: 10px; border-radius: 8px; display: inline-block; margin-bottom: 20px; }
+
+        /* 2. قسم المشاكل */
+        .section-problems {
+            background-color: #FFF0F0;
+            padding: 40px 20px;
+            border-top: 3px dashed var(--red);
+            border-bottom: 3px dashed var(--red);
+        }
+        .problem-box {
+            background: var(--white);
+            border: 2px solid #FFD1D1;
+            border-radius: 12px;
+            padding: 15px;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            box-shadow: 0 4px 10px rgba(255, 59, 48, 0.1);
+        }
+        .problem-box i { color: var(--red); font-size: 30px; margin-left: 15px; }
+        .problem-box div h3 { color: var(--red); font-size: 1.2rem; font-weight: 900; }
+        .problem-box div p { font-size: 0.95rem; font-weight: 700; color: #444; }
+
+        /* 3. قسم الحل VIP */
+        .section-solution {
+            background: var(--dark-blue);
+            color: var(--white);
+            padding: 50px 20px;
+            text-align: center;
+        }
+        .vip-crown { font-size: 50px; color: var(--gold); margin-bottom: 10px; }
+        .solution-list { text-align: right; margin-top: 30px; }
+        .solution-item {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            padding: 15px;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: flex-start;
+            border-right: 4px solid var(--gold);
+        }
+        .solution-item i { color: var(--green); font-size: 24px; margin-left: 15px; margin-top: 2px; }
+        .solution-item h4 { color: var(--gold); font-size: 1.1rem; font-weight: 900; margin-bottom: 5px; }
+        .solution-item p { font-size: 0.95rem; line-height: 1.6; }
+
+        /* --- شبكة صور نتائج المنتجات (KPIs) المتداخلة للمقاسات المختلفة --- */
+        .kpi-section {
+            margin-top: 25px;
+            padding-top: 20px;
+            border-top: 1px dashed rgba(255,255,255,0.2);
+            text-align: center;
+        }
+        .kpi-section h4 { color: var(--gold); font-size: 1.1rem; font-weight: 900; margin-bottom: 15px; }
+        .kpi-grid {
+            column-count: 2;
+            column-gap: 10px;
+        }
+        .kpi-img {
+            width: 100%;
+            margin-bottom: 10px;
+            display: block;
+            border-radius: 8px;
+            border: 2px solid rgba(255,255,255,0.2);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+            cursor: pointer; 
+            break-inside: avoid;
+            transition: 0.3s;
+        }
+        .kpi-img:hover {
+            transform: scale(1.02);
+            border-color: var(--gold);
+        }
+
+        /* --- صندوق الندرة (Scarcity) --- */
+        .scarcity-alert {
+            background: rgba(255, 59, 48, 0.05);
+            border: 2px dashed var(--red);
+            border-radius: 12px;
+            padding: 20px;
+            margin: 40px 20px 30px;
+            text-align: center;
+            position: relative;
+        }
+        .scarcity-alert h3 { color: var(--red); font-weight: 900; font-size: 1.3rem; margin-bottom: 10px;}
+        .scarcity-alert p { color: var(--dark-blue); font-weight: 900; font-size: 1rem; line-height: 1.5; margin-bottom: 10px;}
+        .scarcity-alert .reason { color: #555; font-size: 0.9rem; font-weight: 700; line-height: 1.5; }
+
+        /* 4. العرض الخيالي */
+        .section-offer {
+            background: var(--gold);
+            padding: 40px 20px;
+            text-align: center;
+            color: var(--dark-blue);
+        }
+        .coupon-box {
+            background: var(--white);
+            border: 3px dashed var(--dark-blue);
+            border-radius: 15px;
+            padding: 25px 15px;
+            margin-top: 20px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+            text-align: right; 
+        }
+        .offer-steps { margin-top: 10px; }
+        .step-row { display: flex; align-items: flex-start; gap: 10px; margin-bottom: 5px; font-size: 1.05rem; color: var(--dark-blue); }
+        .step-row strong { font-weight: 900; }
+        .step-arrow { text-align: center; font-size: 1.5rem; margin: 5px 0 10px; }
+        .example-box { background: rgba(0, 119, 255, 0.08); border-right: 4px solid var(--light-blue); padding: 15px; border-radius: 8px; margin: 20px 0; }
+        .example-box h4 { color: var(--dark-blue); margin-bottom: 8px; font-size: 1.1rem; font-weight: 900; }
+        .example-box p { font-size: 0.95rem; font-weight: 700; color: #333; line-height: 1.6; }
+        .why-box { background: rgba(255, 193, 7, 0.15); border-right: 4px solid var(--gold-dark); padding: 15px; border-radius: 8px; }
+        .why-box h4 { color: var(--dark-blue); margin-bottom: 8px; font-size: 1.1rem; font-weight: 900; }
+        .why-box p { font-size: 0.95rem; font-weight: 700; color: #333; line-height: 1.6; }
+
+        /* 5. السورسينغ الجديد */
+        .section-sourcing {
+            background: #F8FAFC;
+            padding: 40px 20px;
+        }
+        .sourcing-header { text-align: center; margin-bottom: 30px; }
+        .sourcing-header h2 { font-size: 1.8rem; font-weight: 900; color: var(--light-blue); margin-bottom: 15px; }
+        .sourcing-header p { font-size: 1rem; font-weight: 700; color: #444; line-height: 1.6; }
+        .sourcing-grid { display: grid; gap: 15px; }
+        .sourcing-card { background: var(--white); padding: 15px; border-radius: 12px; border: 1px solid #E2E8F0; text-align: center; }
+        .sourcing-card i { font-size: 35px; color: var(--light-blue); margin-bottom: 10px; }
+        .sourcing-card h4 { color: var(--dark-blue); font-weight: 900; margin-bottom: 5px; }
+        .sourcing-card p { font-size: 0.9rem; font-weight: 700; color: #555; line-height: 1.5; }
+        .sourcing-highlight {
+            background: rgba(255, 193, 7, 0.2);
+            border: 2px dashed var(--gold-dark);
+            padding: 20px;
+            border-radius: 12px;
+            margin-top: 30px;
+            text-align: center;
+        }
+        .sourcing-highlight h3 { color: var(--dark-blue); font-size: 1.2rem; font-weight: 900; margin-bottom: 10px; }
+        .sourcing-highlight p { color: #333; font-size: 0.95rem; font-weight: 700; line-height: 1.6; }
+
+        /* 6. إثباتات الدفع - 4 صور تتغير أوتوماتيكياً وتتداخل مع الفوتر */
+        .section-proof {
+            background: var(--dark-blue);
+            padding: 40px 20px 30px; 
+        }
+        .proofs-gallery {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); 
+            gap: 15px;
+            margin-bottom: 0; 
+        }
+        .dynamic-proof { 
+            width: 100%; 
+            height: auto;
+            border-radius: 12px; 
+            border: 3px solid rgba(255,255,255,0.2); 
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3); 
+            pointer-events: none; 
+            transition: opacity 0.5s ease-in-out; 
+        }
+
+        /* 7. الفوتر وسياسة الخصوصية */
+        .section-footer {
+            background: var(--dark-blue);
+            padding: 10px 20px 50px; 
+            text-align: center;
+            border-top: none; 
+        }
+        .footer-phone {
+            color: var(--gold);
+            font-size: 1.8rem;
+            font-weight: 900;
+            margin-bottom: 25px;
+            direction: ltr; 
+            display: inline-block;
+            text-decoration: none; 
+        }
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        .social-links a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 50px;
+            height: 50px;
+            background: rgba(255,255,255,0.1);
+            color: var(--white);
+            border-radius: 50%;
+            font-size: 1.5rem;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+        .social-links a:hover {
+            background: var(--gold);
+            color: var(--dark-blue);
+            transform: translateY(-3px);
+        }
+        
+        /* زر فتح سياسة الخصوصية */
+        .privacy-btn-box {
+            background: rgba(0,0,0,0.2);
+            padding: 15px;
+            border-radius: 10px;
+            margin-top: 20px;
+            text-align: center;
+            cursor: pointer;
+            border: 1px dashed rgba(255,255,255,0.2);
+            transition: 0.3s;
+        }
+        .privacy-btn-box:hover {
+            background: rgba(0,0,0,0.4);
+            border-color: var(--gold);
+        }
+        .privacy-btn-box h4 {
+            color: var(--gold);
+            font-size: 1.1rem;
+            margin: 0;
+        }
+
+        /* --- تنسيقات النافذة المنبثقة (سياسة الخصوصية وتكبير الصور) --- */
+        .modal {
+            display: none; 
+            position: fixed; 
+            z-index: 10000; 
+            left: 0;
+            top: 0;
+            width: 100%; 
+            height: 100%; 
+            overflow: auto; 
+            background-color: rgba(0,0,0,0.85); 
+            backdrop-filter: blur(5px);
+        }
+        /* نافذة السياسات */
+        .modal-content {
+            background-color: var(--dark-blue);
+            margin: 20vh auto; 
+            padding: 30px 20px;
+            border: 2px solid var(--gold);
+            border-radius: 15px;
+            width: 90%; 
+            max-width: 450px;
+            color: var(--white);
+            text-align: right;
+            position: relative;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            animation: fadeIn 0.3s ease;
+        }
+        /* نافذة تكبير الصور (Zoom Lightbox) */
+        .modal-img-content {
+            margin: 10vh auto;
+            display: block;
+            width: 90%;
+            max-width: 450px;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.8);
+            animation: fadeIn 0.3s ease;
+            pointer-events: none; 
+            -webkit-user-select: none;
+            -webkit-touch-callout: none;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .close-btn {
+            color: var(--white);
+            position: absolute;
+            top: 15px;
+            right: 20px;
+            font-size: 35px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+            z-index: 10001;
+        }
+        .close-btn:hover { color: var(--gold); }
+        .modal-content p {
+            margin-bottom: 15px;
+            line-height: 1.8;
+            font-size: 0.95rem;
+            color: #ddd;
+        }
+        .modal-content h4 {
+            text-align: center;
+            color: var(--gold);
+            font-size: 1.3rem;
+            margin-bottom: 20px;
+            border-bottom: 1px dashed rgba(255,255,255,0.2);
+            padding-bottom: 10px;
+        }
+
+        /* الشريط السفلي الثابت (CTA) */
+        .sticky-footer {
+            position: fixed;
+            bottom: 20px; 
+            left: 0;
+            width: 100%;
+            background: transparent; 
+            padding: 0 20px;
+            box-shadow: none; 
+            display: flex;
+            justify-content: center;
+            z-index: 9999;
+            pointer-events: none; 
+        }
+        .btn-whatsapp-huge {
+            background: var(--green);
+            color: var(--white);
+            width: 100%;
+            max-width: 500px;
+            padding: 15px;
+            border-radius: 50px;
+            font-size: 1.4rem;
+            font-weight: 900;
+            text-align: center;
+            text-decoration: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            animation: pulse-green 1.5s infinite;
+            pointer-events: auto; 
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2); 
+        }
+        @keyframes pulse-green {
+            0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(52, 199, 89, 0.7); }
+            50% { transform: scale(1.02); box-shadow: 0 0 0 15px rgba(52, 199, 89, 0); }
+            100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(52, 199, 89, 0); }
+        }
+
+        /* --- الأنيميشن (الانتقالات) للعناصر المخفية --- */
+        .hidden {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.6s ease-out;
+        }
+        .show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- الحاوية الرئيسية -->
+    <div class="funnel-container">
+
+        <!-- 1. الهيرو -->
+        <div class="section-hero">
+            <div class="text-logo hidden">
+                <span class="b2b">B2B</span> <span class="winners">WINNERS</span>
+            </div>
+            <h1 class="title-main hidden"><span class="highlight-red">هل تعبت</span> من تضييع ايام و اموال في البحث عن منتج مربح ؟</h1>
+            <div class="hero-subtitle hidden">نظام عمل متكامل يضع بين يديك المنتجات الرابحة جاهزة للبيع</div>
+        </div>
+
+        <!-- 2. المشاكل -->
+        <div class="section-problems">
+            <h2 class="title-main text-center hidden">أغلب التجار يعانون من نفس <span class="highlight-red">الكابوس ❌</span></h2>
+            
+            <div class="problem-box hidden">
+                <i class="fas fa-fire-alt"></i>
+                <div>
+                    <h3>منتجات محروقة 🔥</h3>
+                    <p>تلقى Produit يعجبك، تدخل تجرّبو... تلقى عشرات التجار سبقوك ليه</p>
+                </div>
+            </div>
+            <div class="problem-box hidden">
+                <i class="fas fa-money-bill-wave"></i>
+                <div>
+                    <h3>💸 التاست ياكل ميزانية ضخمة</h3>
+                    <p>تصرف على Creatives وAds وتستنى النتائج... وفي الأخير المنتج ما يمشيش</p>
+                </div>
+            </div>
+            <div class="problem-box hidden">
+                <i class="fas fa-sync-alt"></i>
+                <div>
+                    <h3>كل مرة تبدأ من الصفر</h3>
+                    <p>تحوس على Produit، creatives، Landing Page... وبعدها تعاود نفس الخدمة مع المنتج اللي بعده ( معانا تلقى كلش واجد )</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 3. الحل VIP -->
+        <div class="section-solution">
+            <i class="fas fa-crown vip-crown hidden"></i>
+            <h2 class="title-main highlight-gold hidden">الحل النهائي: مجموعة VIP</h2>
+            <p style="font-size: 1.1rem; font-weight: 700;" class="hidden">وش تلقى داخل B2B WINNERS VIP</p>
+
+            <div class="solution-list">
+                <div class="solution-item hidden">
+                    <i class="fas fa-check-circle"></i>
+                    <div>
+                        <h4>3 إلى 5 منتجات يومياً</h4>
+                        <p>نشارك معكم يوميا من 3-5 منتجات مربحة غير محروقة في سوق الجزائري</p>
+                    </div>
+                </div>
+                <div class="solution-item hidden">
+                    <i class="fas fa-check-circle"></i>
+                    <div>
+                        <h4>ماتريال إعلاني جاهز</h4>
+                        <p>نشارك معكم مع كل منتوج مربح الفيديوهات الاعلانية الخاصة بلمنتوج + صفحة هبوط احترافية</p>
+                    </div>
+                </div>
+                <div class="solution-item hidden">
+                    <i class="fas fa-chart-bar"></i>
+                    <div>
+                        <h4>منتجات مجرّبة بأرقام حقيقية 📊</h4>
+                        <p>نقوم باختبار بعض المنتجات على حسابنا، وكي تكون النتائج مليحة نشارك نتائج الـTest مع أعضاء VIP</p>
+                    </div>
+                </div>
+                <div class="solution-item hidden">
+                    <i class="fas fa-search"></i>
+                    <div>
+                        <h4>Sourcing مجاني لأعضاء VIP 🔍</h4>
+                        <p>عجبك منتج داخل الـVIP أو لقيت منتج وحدك؟ ابعث لنا غير صورته أو رابطه، والباقي علينا</p>
+                    </div>
+                </div>
+                <div class="solution-item hidden">
+                    <i class="fas fa-handshake"></i>
+                    <div>
+                        <h4>متابعة ومرافقة من الفريق 🤝</h4>
+                        <p>عندك سؤال على Product، Sourcing أو طلبية؟ فريقنا يبقى معاك ويساعدك خلال مراحل العمل</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- صور الـ KPIs للمنتجات بطريقة متداخلة (مع إمكانية التكبير) -->
+            <div class="kpi-section hidden">
+                <h4>📸 أمثلة لنتائج (KPIs) منتجات قمنا بتجربتها:</h4>
+                <div class="kpi-grid">
+                    <img src="products/IMG-20260812-WA0015.jpg" alt="نتيجة" class="kpi-img" onerror="this.style.display='none'">
+                    <img src="products/IMG-20260812-WA0016.jpg" alt="نتيجة" class="kpi-img" onerror="this.style.display='none'">
+                    <img src="products/IMG-20260812-WA0017.jpg" alt="نتيجة" class="kpi-img" onerror="this.style.display='none'">
+                    <img src="products/IMG-20260812-WA0018.jpg" alt="نتيجة" class="kpi-img" onerror="this.style.display='none'">
+                    <img src="products/IMG-20260812-WA0019.jpg" alt="نتيجة" class="kpi-img" onerror="this.style.display='none'">
+                    <img src="products/IMG-20260812-WA0020.jpg" alt="نتيجة" class="kpi-img" onerror="this.style.display='none'">
+                    <img src="products/IMG-20260812-WA0021.jpg" alt="نتيجة" class="kpi-img" onerror="this.style.display='none'">
+                    <img src="products/IMG-20260812-WA0022.jpg" alt="نتيجة" class="kpi-img" onerror="this.style.display='none'">
+                    <img src="products/IMG-20260812-WA0023.jpg" alt="نتيجة" class="kpi-img" onerror="this.style.display='none'">
+                    <img src="products/IMG-20260812-WA0025.jpg" alt="نتيجة" class="kpi-img" onerror="this.style.display='none'">
+                    <img src="products/IMG-20260812-WA0026.jpg" alt="نتيجة" class="kpi-img" onerror="this.style.display='none'">
+                    <img src="products/IMG-20260812-WA0027.jpg" alt="نتيجة" class="kpi-img" onerror="this.style.display='none'">
+                    <img src="products/IMG-20260812-WA0028.jpg" alt="نتيجة" class="kpi-img" onerror="this.style.display='none'">
+                </div>
+            </div>
+        </div>
+
+        <!-- صندوق الندرة (Scarcity Box) -->
+        <div class="scarcity-alert hidden">
+            <h3>⚠️ تنبيه هام: الأماكن محدودة جداً!</h3>
+            <p>مجموعة VIP ليست للجميع (العدد محدود ولن نقبل 100 أو 200 شخص). رح ندخلو عدد قليل جداً ونغلقو الكروب.</p>
+            <p class="reason">الهدف؟ باش نحافظو على المنتجات من الحرق، نمنعو المنافسة بين الأعضاء، ونضمنو بيئة عمل نقية ومربحة للجميع.</p>
+        </div>
+
+        <!-- 4. العرض الخيالي -->
+        <div class="section-offer">
+            <h2 class="title-main hidden" style="color: var(--dark-blue);">🔥 عرض لا يُرفض 🔥</h2>
+            <div class="coupon-box hidden">
+                <div class="offer-steps">
+                    <div class="step-row">
+                        <span style="font-size: 1.5rem;">1️⃣</span>
+                        <p><strong>تدفع 15000 دج</strong><br>وتدخل مباشرة إلى B2B WINNERS VIP</p>
+                    </div>
+                    <div class="step-arrow">⬇️</div>
+                    <div class="step-row">
+                        <span style="font-size: 1.5rem;">2️⃣</span>
+                        <p><strong>تستفيد من كامل خدمات الـVIP</strong><br>المنتجات + Creatives + Landing Pages + الأسعار واصلة + Sourcing</p>
+                    </div>
+                    <div class="step-arrow">⬇️</div>
+                    <div class="step-row">
+                        <span style="font-size: 1.5rem;">3️⃣</span>
+                        <p><strong>تدير أول طلبية سورسينج معنا</strong><br>نخصمولك 15000 دج من قيمة الطلبية.</p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h4>💡 مثال بسيط:</h4>
+                    <p>طلبية السورسينج الخاصة بك مثلا 100 قطعة<br>
+                    قيمة طلبيتك: 100,000 دج<br>
+                    عندما تصل سلعتك لك انت راح تدفع <strong>85000 دج فقط</strong><br>
+                    15000 دج راح تتم ارجاعها لك</p>
+                </div>
+
+                <div class="why-box">
+                    <h4>🤔 علاش درنا 15,000 دج للدخول؟</h4>
+                    <p>درنا هذا النظام باش ندخلو للـVIP ناس جادة وحابة تخدم فعلاً، ونحافظو على المنتجات المربحة الخاصة بنا و جودة الخدمة</p>
+                    <p style="margin-top:10px; color:var(--red); font-weight:900;">والـ15,000 دج ما يضيعولكش: يتخصمو من أول طلبية مؤهلة تديرها معانا و تصبح مشترك معنا بلمجان ✅</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 5. السورسينغ -->
+        <div class="section-sourcing">
+            <div class="sourcing-header hidden">
+                <h2>🌍 خدمة SOURCING احترافية — مجانية لأعضاء VIP</h2>
+                <p>كعضو في B2B WINNERS VIP، ماشي مجبور تختار غير المنتجات اللي نشاركوها معاك.<br>لقيت منتج وحدك وحاب تستورده؟ 📸 أرسل لنا صورة المنتج أو رابطه فقط، والباقي علينا.</p>
+            </div>
+            
+            <div class="sourcing-grid">
+                <div class="sourcing-card hidden">
+                    <i class="fas fa-search-dollar"></i>
+                    <h4>🔍 البحث والتفاوض</h4>
+                    <p>نبحث لك عن المورد المناسب ونقارن الأسعار ونتفاوض للحصول على عرض مناسب.</p>
+                </div>
+                <div class="sourcing-card hidden">
+                    <i class="fas fa-shield-alt"></i>
+                    <h4>🛡️ التحقق والمتابعة</h4>
+                    <p>نتابع و نفحص جودة المنتج حبة حبة قبل الشحن</p>
+                </div>
+                <div class="sourcing-card hidden">
+                    <i class="fas fa-hand-holding-usd"></i>
+                    <h4>💰 السعر واصل للجزائر</h4>
+                    <p>نعطيك تكلفة واضحة للمنتج واصل للجزائر قبل تأكيد الطلب.</p>
+                </div>
+                <div class="sourcing-card hidden">
+                    <i class="fas fa-shipping-fast"></i>
+                    <h4>✈️ الشحن إلى الجزائر و الجمركة</h4>
+                    <p>نتكفل بكل مراحل التوريد والشحن و الجمركة المنتج يصلك بدون اي تعقيدات</p>
+                </div>
+            </div>
+
+            <div class="sourcing-highlight hidden">
+                <h3>🎁 كل هذا بدون رسوم Sourcing إضافية لأعضاء VIP</h3>
+                <p>سواء اخترت منتجًا من المنتجات التي نشاركها داخل VIP، أو وجدت منتجًا بنفسك ارسل لنا صورته فقط و نحن سنتكفل بل باقي</p>
+            </div>
+        </div>
+
+        <!-- 6. إثباتات الدفع (4 صور تتغير عشوائياً من بين 15 صورة) -->
+        <div class="section-proof">
+            <h2 class="title-main highlight-gold text-center hidden">الثقة والمصداقية 🤝</h2>
+            <p class="text-center hidden" style="color: white; margin-bottom: 20px; font-weight: 700;">بعض من تعاملاتنا المباشرة مع عملائنا</p>
+            
+            <div class="proofs-gallery hidden">
+                <!-- 4 أماكن للصور، يتم سحبها من جميع صورك عشوائيا -->
+                <img src="assets/IMG-20260809-WA0035.jpg" alt="إثبات دفع" class="dynamic-proof">
+                <img src="assets/IMG-20260809-WA0036.jpg" alt="إثبات دفع" class="dynamic-proof">
+                <img src="assets/IMG-20260809-WA0037.jpg" alt="إثبات دفع" class="dynamic-proof">
+                <img src="assets/IMG-20260809-WA0038.jpg" alt="إثبات دفع" class="dynamic-proof"> 
+            </div>
+        </div>
+
+        <!-- 7. الفوتر وسياسة الخصوصية -->
+        <div class="section-footer">
+            <h3 class="hidden" style="color: var(--white); margin-bottom: 10px;">للتواصل المباشر والاستفسار</h3>
+            
+            <a href="tel:+213779049844" class="footer-phone hidden">
+                +213 779 04 98 44
+            </a>
+            
+            <div class="social-links hidden">
+                <a href="https://wa.me/213779049844" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://t.me/B2B_WINNERS" target="_blank"><i class="fab fa-telegram"></i></a>
+                <a href="https://www.instagram.com/b2b_winners?igsh=aGtraGxwNzlyaHZu" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+
+            <!-- زر فتح نافذة السياسات -->
+            <div class="privacy-btn-box hidden" id="openPrivacyModal">
+                <h4><i class="fas fa-file-contract"></i> السياسات وشروط الاستخدام</h4>
+            </div>
+            <p class="hidden" style="text-align: center; margin-top: 15px; color: #888; font-size: 0.85rem;">© 2026 B2B WINNERS. جميع الحقوق محفوظة.</p>
+        </div>
+
+    </div>
+
+    <!-- 8. نوافذ منبثقة (Modals) للسياسات وتكبير الصور -->
+    
+    <!-- نافذة السياسات -->
+    <div id="privacyModal" class="modal">
+        <span class="close-btn" id="closePrivacy">&times;</span>
+        <div class="modal-content">
+            <h4>السياسات وشروط الاستخدام</h4>
+            <p><strong>سياسة الخصوصية:</strong> نحن نلتزم بحماية بياناتك الشخصية ولا نشاركها مع أي جهة خارجية.</p>
+            <p><strong>شروط الاستخدام:</strong> الانضمام لمجموعة الـ VIP يعني التزامك بالحفاظ على سرية المنتجات والمواد الإعلانية (Service de marketing numérique).</p>
+            <p><strong>سياسة الاسترجاع:</strong> رسوم الدخول (15,000 دج) تُسترجع بالكامل كخصم مباشر في أول طلبية سورسينغ لك معنا.</p>
+        </div>
+    </div>
+
+    <!-- نافذة تكبير الصور (Lightbox) -->
+    <div id="imageLightbox" class="modal">
+        <span class="close-btn" id="closeLightbox">&times;</span>
+        <img class="modal-img-content" id="lightboxImg">
+    </div>
+
+    <!-- الشريط السفلي الثابت (CTA) -->
+    <div class="sticky-footer">
+        <a href="https://wa.me/213779049844" target="_blank" class="btn-whatsapp-huge">
+            <i class="fab fa-whatsapp"></i> اشترك الآن في VIP
+        </a>
+    </div>
+
+    <!-- كود جافاسكريبت للنافذة المنبثقة، وتأثيرات التمرير، الحماية، والأنيميشن العشوائي لجميع الصور -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            
+            // 1. تتبع ضغطات أزرار الواتساب لبيكسل ميتا (Lead Event)
+            const waButtons = document.querySelectorAll('a[href*="wa.me"]');
+            waButtons.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    if(typeof fbq === 'function') {
+                        fbq('track', 'Lead');
+                    }
+                });
+            });
+
+            // 2. سكربت النوافذ المنبثقة (السياسات وتكبير الصور)
+            const privacyModal = document.getElementById("privacyModal");
+            const btnPrivacy = document.getElementById("openPrivacyModal");
+            const closePrivacy = document.getElementById("closePrivacy");
+
+            const lightbox = document.getElementById("imageLightbox");
+            const lightboxImg = document.getElementById("lightboxImg");
+            const closeLightbox = document.getElementById("closeLightbox");
+            const kpiImages = document.querySelectorAll(".kpi-img");
+
+            // فتح نافذة السياسات
+            btnPrivacy.onclick = function() { privacyModal.style.display = "block"; }
+            closePrivacy.onclick = function() { privacyModal.style.display = "none"; }
+
+            // فتح وتكبير صور المنتجات
+            kpiImages.forEach(img => {
+                img.addEventListener('click', function() {
+                    lightbox.style.display = "block";
+                    lightboxImg.src = this.src;
+                });
+            });
+            closeLightbox.onclick = function() { lightbox.style.display = "none"; }
+
+            // إغلاق النوافذ عند الضغط خارجها
+            window.onclick = function(event) {
+                if (event.target == privacyModal) { privacyModal.style.display = "none"; }
+                if (event.target == lightbox) { lightbox.style.display = "none"; }
+            }
+
+            // 3. تغيير صور الإثباتات عشوائياً كل 3 ثواني متضمنة جميع الصور المطلوبة
+            const proofImagesPool = [
+                'assets/IMG-20260809-WA0035.jpg',
+                'assets/IMG-20260809-WA0036.jpg',
+                'assets/IMG-20260809-WA0037.jpg',
+                'assets/IMG-20260809-WA0038.jpg',
+                'assets/IMG-20260809-WA0039.jpg',
+                'assets/IMG-20260809-WA0040.jpg',
+                'assets/IMG-20260809-WA0041.jpg',
+                'assets/IMG-20260809-WA0042.jpg',
+                'assets/IMG-20260809-WA0043.jpg',
+                'assets/IMG-20260809-WA0044.jpg',
+                'assets/IMG-20260809-WA0045.jpg',
+                'assets/IMG-20260809-WA0046.jpg',
+                'assets/IMG-20260809-WA0047.jpg',
+                'assets/IMG-20260809-WA0048.jpg',
+                'assets/IMG-20260809-WA0049.jpg'
+            ];
+
+            const proofSlots = document.querySelectorAll('.dynamic-proof');
+            if (proofSlots.length > 0 && proofImagesPool.length > 0) {
+                setInterval(() => {
+                    // خلط القائمة لاختيار صور عشوائية من جميع الصور الـ 15
+                    let shuffled = [...proofImagesPool].sort(() => 0.5 - Math.random());
+                    
+                    let selected = [
+                        shuffled[0] || proofImagesPool[0],
+                        shuffled[1] || proofImagesPool[0],
+                        shuffled[2] || proofImagesPool[0],
+                        shuffled[3] || proofImagesPool[0]
+                    ];
+
+                    proofSlots.forEach((slot, index) => {
+                        slot.style.opacity = 0; 
+                        setTimeout(() => {
+                            slot.src = selected[index];
+                            slot.style.opacity = 1; 
+                        }, 400); 
+                    });
+                }, 3000);
+            }
+
+            // 4. مراقبة العناصر أثناء التمرير (Scroll Animation)
+            const observerOptions = { root: null, rootMargin: '0px', threshold: 0.15 };
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('show');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+
+            const hiddenElements = document.querySelectorAll('.hidden');
+            hiddenElements.forEach((el) => observer.observe(el));
+
+            // 5. أكواد الحماية ضد السرقة
+            document.addEventListener('contextmenu', event => event.preventDefault());
+            document.onkeydown = function(e) {
+                if(e.keyCode == 123) { return false; } 
+                if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) { return false; } 
+                if(e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) { return false; } 
+                if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) { return false; } 
+                if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) { return false; } 
+                if(e.ctrlKey && e.keyCode == 'S'.charCodeAt(0)) { return false; } 
+                if(e.ctrlKey && e.keyCode == 'P'.charCodeAt(0)) { return false; } 
+            };
+        });
+    </script>
+</body>
+</html>
