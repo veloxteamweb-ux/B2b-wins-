@@ -1,0 +1,154 @@
+@@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;800;900&display=swap');
+
+/* الألوان الأساسية */
+:root {
+    --blue-dark: #063970;
+    --blue-light: #1e81b0;
+    --gold: #f4b41a;
+    --gold-dark: #d49a15;
+    --green-wa: #25d366;
+    --red-danger: #e63946;
+    --bg-light: #e2e8f0; /* تم جعل الخلفية أغمق قليلاً */
+    --text-dark: #1d3557;
+    --text-muted: #5a6268;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cairo', sans-serif;
+}
+
+body {
+    background-color: var(--bg-light);
+    color: var(--text-dark);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.text-center { text-align: center; }
+.mt-2 { margin-top: 20px; }
+.mt-3 { margin-top: 30px; }
+.text-blue { color: var(--blue-dark); }
+.text-gold { color: var(--gold); }
+
+/* الأزرار */
+.btn {
+    display: inline-block;
+    padding: 14px 30px;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    font-weight: 800;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+}
+.btn-primary {
+    background: linear-gradient(45deg, var(--blue-dark), var(--blue-light));
+    color: white;
+    box-shadow: 0 5px 15px rgba(6, 57, 112, 0.4);
+}
+.btn-gold {
+    background: linear-gradient(45deg, var(--gold), var(--gold-dark));
+    color: #fff;
+    box-shadow: 0 5px 15px rgba(244, 180, 26, 0.4);
+}
+.btn-whatsapp { background-color: var(--green-wa); color: white; }
+.btn-telegram { background-color: #0088cc; color: white; }
+.btn:hover { transform: translateY(-3px); }
+
+/* الهيرو */
+.hero-section {
+    background: #fff;
+    padding: 40px 0 60px;
+    border-bottom: 2px solid #ddd;
+}
+.logo { max-width: 220px; margin-bottom: 20px; border-radius: 12px; }
+.main-title { font-size: 2.2rem; font-weight: 900; color: var(--blue-dark); margin-bottom: 15px; }
+.sub-title { font-size: 1.2rem; color: var(--text-muted); margin-bottom: 30px; max-width: 700px; margin-left: auto; margin-right: auto; }
+
+/* الأقسام المشتركة */
+section { padding: 60px 0; }
+.section-title { font-size: 2rem; font-weight: 800; margin-bottom: 40px; }
+
+/* الكروت (الشبكة) */
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+.card {
+    background: #fff;
+    padding: 30px 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.04);
+    border: 1px solid #eee;
+    transition: 0.3s;
+}
+.danger-card:hover { border-color: var(--red-danger); transform: translateY(-5px); }
+.icon-circle {
+    width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 25px; margin: 0 auto 15px;
+    background: rgba(230, 57, 70, 0.1); color: var(--red-danger);
+}
+.card h3 { color: var(--blue-dark); margin-bottom: 10px; font-size: 1.3rem; }
+
+/* VIP Section */
+.vip-section { background: var(--blue-dark); color: white; }
+.vip-badge { display: inline-block; background: var(--gold); color: white; padding: 8px 20px; border-radius: 30px; font-weight: 800; font-size: 1.2rem; margin-bottom: 10px; }
+.features-list { max-width: 600px; margin: 30px auto; text-align: right; }
+.feature-row { display: flex; align-items: flex-start; margin-bottom: 25px; background: rgba(255,255,255,0.05); padding: 15px; border-radius: 10px; }
+.check-icon { font-size: 30px; color: var(--gold); margin-left: 15px; margin-top: 5px; }
+.feature-row h4 { color: var(--gold); font-size: 1.2rem; margin-bottom: 5px; }
+
+/* صندوق العرض الخيالي */
+.offer-box { background: #fff; color: var(--text-dark); padding: 40px 20px; border-radius: 20px; border: 3px solid var(--gold); position: relative; max-width: 700px; margin: 40px auto 0; }
+.fire-icon { position: absolute; top: -20px; left: 50%; transform: translateX(-50%); background: var(--gold); color: white; padding: 5px 20px; border-radius: 20px; font-weight: 800; font-size: 1.2rem; }
+.highlight-box { background: rgba(6, 57, 112, 0.08); padding: 15px; border-radius: 10px; color: var(--blue-dark); font-weight: 800; font-size: 1.2rem; margin: 20px 0; border: 1px dashed var(--blue-dark); }
+
+/* Sourcing Timeline */
+.sourcing-section { background: #fff; }
+.flags { font-size: 2rem; letter-spacing: 15px; margin-bottom: 40px; }
+.timeline-container { max-width: 600px; margin: 0 auto; text-align: right; }
+.timeline-step { display: flex; align-items: center; margin-bottom: 30px; background: var(--bg-light); padding: 20px; border-radius: 15px; border-right: 4px solid var(--blue-light); }
+.step-number { width: 40px; height: 40px; background: var(--blue-light); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; font-weight: 900; margin-left: 15px; flex-shrink: 0; }
+.timeline-step h4 { color: var(--blue-dark); font-size: 1.3rem; margin-bottom: 5px; }
+
+/* إثباتات الدفع (صور بدلاً من النصوص) */
+.reviews-section { background: var(--bg-light); }
+.proofs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+.proof-img {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    border: 3px solid white;
+    transition: transform 0.3s ease;
+}
+.proof-img:hover {
+    transform: scale(1.03);
+}
+
+/* Footer */
+.main-footer { background: var(--blue-dark); color: white; padding: 60px 20px; border-top: 5px solid var(--gold); }
+.footer-title { color: var(--gold); margin-bottom: 20px; }
+.footer-buttons { display: flex; justify-content: center; gap: 15px; flex-wrap: wrap; margin-top: 30px; }
+
+/* للموبايل */
+@media (max-width: 768px) {
+    .main-title { font-size: 1.8rem; }
+    .feature-row { flex-direction: column; text-align: center; align-items: center; }
+    .check-icon { margin-left: 0; margin-bottom: 15px; }
+    .timeline-step { flex-direction: column; text-align: center; border-right: none; border-bottom: 4px solid var(--blue-light); }
+    .step-number { margin-left: 0; margin-bottom: 15px; }
+}
